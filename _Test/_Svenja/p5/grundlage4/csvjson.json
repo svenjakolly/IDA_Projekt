@@ -1,0 +1,200 @@
+[{
+    "Startzeit": "30-04-2021 3:58PM",
+    "Endzeit": "30-04-2021 5:16PM",
+    "MinutenGeschlafen": 71,
+    "MinutenWach": 7,
+    "WieHaeufigAufgewacht": 1,
+    "ZeitImBett": 78,
+    "MinutenREMSchlaf": "Nicht verfügbar",
+    "MinutenleichterSchlaf": "Nicht verfügbar",
+    "MinutenTiefschlaf": "Nicht verfügbar"
+}, {
+    "Startzeit": "22-04-2021 10:33PM",
+    "Endzeit": "23-04-2021 7:46AM",
+    "MinutenGeschlafen": 493,
+    "MinutenWach": 60,
+    "WieHaeufigAufgewacht": 28,
+    "ZeitImBett": 553,
+    "MinutenREMSchlaf": 129,
+    "MinutenleichterSchlaf": 305,
+    "MinutenTiefschlaf": 59
+}, {
+    "Startzeit": "21-04-2021 11:08PM",
+    "Endzeit": "22-04-2021 7:10AM",
+    "MinutenGeschlafen": 428,
+    "MinutenWach": 54,
+    "WieHaeufigAufgewacht": 32,
+    "ZeitImBett": 482,
+    "MinutenREMSchlaf": 112,
+    "MinutenleichterSchlaf": 232,
+    "MinutenTiefschlaf": 84
+}, {
+    "Startzeit": "20-04-2021 11:59PM",
+    "Endzeit": "21-04-2021 6:17AM",
+    "MinutenGeschlafen": 331,
+    "MinutenWach": 47,
+    "WieHaeufigAufgewacht": 21,
+    "ZeitImBett": 378,
+    "MinutenREMSchlaf": 67,
+    "MinutenleichterSchlaf": 208,
+    "MinutenTiefschlaf": 56
+}, {
+    "Startzeit": "19-04-2021 11:12PM",
+    "Endzeit": "20-04-2021 7:12AM",
+    "MinutenGeschlafen": 455,
+    "MinutenWach": 25,
+    "WieHaeufigAufgewacht": 1,
+    "ZeitImBett": 480,
+    "MinutenREMSchlaf": "Nicht verfügbar",
+    "MinutenleichterSchlaf": "Nicht verfügbar",
+    "MinutenTiefschlaf": "Nicht verfügbar"
+}, {
+    "Startzeit": "18-04-2021 11:03PM",
+    "Endzeit": "19-04-2021 6:19AM",
+    "MinutenGeschlafen": 377,
+    "MinutenWach": 59,
+    "WieHaeufigAufgewacht": 20,
+    "ZeitImBett": 436,
+    "MinutenREMSchlaf": 89,
+    "MinutenleichterSchlaf": 234,
+    "MinutenTiefschlaf": 54
+}, {
+    "Startzeit": "17-04-2021 11:59PM",
+    "Endzeit": "18-04-2021 8:49AM",
+    "MinutenGeschlafen": 487,
+    "MinutenWach": 43,
+    "WieHaeufigAufgewacht": 24,
+    "ZeitImBett": 530,
+    "MinutenREMSchlaf": 126,
+    "MinutenleichterSchlaf": 253,
+    "MinutenTiefschlaf": 108
+}, {
+    "Startzeit": "16-04-2021 12:18AM",
+    "Endzeit": "16-04-2021 7:06AM",
+    "MinutenGeschlafen": 338,
+    "MinutenWach": 70,
+    "WieHaeufigAufgewacht": 21,
+    "ZeitImBett": 408,
+    "MinutenREMSchlaf": 63,
+    "MinutenleichterSchlaf": 228,
+    "MinutenTiefschlaf": 47
+}, {
+    "Startzeit": "14-04-2021 11:01PM",
+    "Endzeit": "15-04-2021 6:17AM",
+    "MinutenGeschlafen": 384,
+    "MinutenWach": 52,
+    "WieHaeufigAufgewacht": 20,
+    "ZeitImBett": 436,
+    "MinutenREMSchlaf": 114,
+    "MinutenleichterSchlaf": 212,
+    "MinutenTiefschlaf": 58
+}, {
+    "Startzeit": "13-04-2021 11:41PM",
+    "Endzeit": "14-04-2021 7:04AM",
+    "MinutenGeschlafen": 387,
+    "MinutenWach": 56,
+    "WieHaeufigAufgewacht": 23,
+    "ZeitImBett": 443,
+    "MinutenREMSchlaf": 99,
+    "MinutenleichterSchlaf": 229,
+    "MinutenTiefschlaf": 59
+}, {
+    "Startzeit": "12-04-2021 11:56PM",
+    "Endzeit": "13-04-2021 7:07AM",
+    "MinutenGeschlafen": 383,
+    "MinutenWach": 47,
+    "WieHaeufigAufgewacht": 22,
+    "ZeitImBettt": 430,
+    "MinutenREMSchlaf": 94,
+    "MinutenleichterSchlaf": 209,
+    "MinutenTiefschlaf": 80
+}, {
+    "Startzeit": "11-04-2021 11:41PM",
+    "Endzeit": "12-04-2021 7:04AM",
+    "MinutenGeschlafen": 396,
+    "MinutenWach": 47,
+    "WieHaeufigAufgewacht": 24,
+    "ZeitImBett": 443,
+    "MinutenREMSchlaf": 101,
+    "MinutenleichterSchlaf": 269,
+    "MinutenTiefschlaf": 26
+}, {
+    "Startzeit": "11-04-2021 12:07AM",
+    "Endzeit": "11-04-2021 7:22AM",
+    "MinutenGeschlafen": 390,
+    "MinutenWach": 44,
+    "WieHaeufigAufgewacht": 25,
+    "ZeitImBett": 434,
+    "MinutenREMSchlaf": 74,
+    "MinutenleichterSchlaf": 254,
+    "MinutenTiefschlaf": 62
+}, {
+    "Startzeit": "10-04-2021 12:16PM",
+    "Endzeit": "10-04-2021 1:28PM",
+    "MinutenGeschlafen": 69,
+    "MinutenWach": 3,
+    "WieHaeufigAufgewacht": 1,
+    "ZeitImBett": 72,
+    "MinutenREMSchlaf": "Nicht verfügbar",
+    "MinutenleichterSchlaf": "Nicht verfügbar",
+    "MinutenTiefschlaf": "Nicht verfügbar"
+}, {
+    "Startzeit": "09-04-2021 11:48PM",
+    "Endzeit": "10-04-2021 9:05AM",
+    "MinutenGeschlafen": 500,
+    "MinutenWach": 57,
+    "WieHaeufigAufgewacht": 35,
+    "ZeitImBett": 557,
+    "MinutenREMSchlaf": 104,
+    "MinutenleichterSchlaf": 331,
+    "MinutenTiefschlaf": 65
+}, {
+    "Startzeit": "09-04-2021 12:06AM",
+    "Endzeit": "09-04-2021 7:18AM",
+    "MinutenGeschlafen": 371,
+    "MinutenWach": 61,
+    "WieHaeufigAufgewacht": 17,
+    "ZeitImBett": 432,
+    "MinutenREMSchlaf": 105,
+    "MinutenleichterSchlaf": 207,
+    "MinutenTiefschlaf": 59
+}, {
+    "Startzeit": "07-04-2021 11:55PM",
+    "Endzeit": "08-04-2021 7:24AM",
+    "MinutenGeschlafen": 407,
+    "MinutenWach": 42,
+    "WieHaeufigAufgewacht": 21,
+    "ZeitImBett": 449,
+    "MinutenREMSchlaf": 125,
+    "Minuten leichter Schlaf": 214,
+    "Minuten Tiefschlaf": 68
+}, {
+    "Startzeit": "06-04-2021 11:47PM",
+    "Endzeit": "07-04-2021 7:37AM",
+    "MinutenGeschlafen": 409,
+    "MinutenWach": 61,
+    "WieHaeufigAufgewacht": 21,
+    "ZeitImBett": 470,
+    "MinutenREMSchlaf": 100,
+    "MinutenleichterSchlaf": 235,
+    "MinutenTiefschlaf": 74
+}, {
+    "Startzeit": "04-04-2021 12:22AM",
+    "Endzeit": "04-04-2021 8:01AM",
+    "MinutenGeschlafen": 413,
+    "MinutenWach": 46,
+    "WieHaeufigAufgewacht": 26,
+    "MinutenREMSchlaf": 127,
+    "MinutenleichterSchlaf": 222,
+    "MinutenTiefschlaf": 64
+}, {
+    "Startzeit": "31-03-2021 10:47PM",
+    "Endzeit": "01-04-2021 6:16AM",
+    "MinutenGeschlafen": 386,
+    "MinutenWach": 63,
+    "WieHaeufigAufgewacht": 20,
+    "ZeitImBett": 449,
+    "MinutenREMSchlaf": 109,
+    "MinutenleichterSchlaf": 188,
+    "MinutenTiefschlaf": 89
+}]

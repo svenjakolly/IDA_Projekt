@@ -12,13 +12,19 @@ function draw() {
   // background(0);
 }
 
-'use strict';
-
 var x = 0;
 var y = 0;
 var stepSize = 5.0;
 
-myFont = loadFont ('daylight.ttf')
+
+
+function preload() {
+  // Ensure the .ttf or .otf font stored in the assets directory
+  // is loaded before setup() and draw() are called
+  font = loadFont('daylight.ttf');
+}
+
+
 var font = 'daylight.ttf';
 var letters = 'snacki snack ist eine experimentelle seite von kollygujer. kollygujer ist ein grafikstudio welches investigatives-konzeptionelles design verfolgt///';
 var fontSizeMin = 6;
