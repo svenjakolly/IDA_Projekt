@@ -61,9 +61,7 @@ function draw() {
 
 }
 
-
-
-
+//screenshot speichern
 function keyReleased() {
     if (key == 's' || key == 'S') {
         let d = new Date();
