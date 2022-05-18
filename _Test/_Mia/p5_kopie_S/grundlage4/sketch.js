@@ -1,4 +1,4 @@
-let schlafdaten;
+// let schlafdaten;
 
 
 function loaded(data) {
@@ -11,7 +11,7 @@ function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
     let url = "csvjson.json";
     loadJSON(url, loaded);
-    background(0, 0, 255);
+    background(0, 200, 50);
     frameRate(1);
 
 }
@@ -47,8 +47,8 @@ function draw() {
 
         fill(f);
         stroke(f);
-        strokeWeight(2);
-        rect(b, 0, d, 5000);
+        strokeWeight(10);
+        rect(b, 8, d, 5000);
         fill(f2);
         rect(0, b, 5000, d);
         rect(0, b + 400, 5000, d);
