@@ -6,7 +6,7 @@ function loaded(data) {
 }
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+    createCanvas(window.innerWidth, window.innerHeight);
     let url = "sleep_score.json";
     loadJSON(url, loaded);
     background(0, 0, 255);
@@ -15,22 +15,32 @@ function setup() {
 
 function draw() {
 
-    for (let i = 0; i < schlafdaten.length; i++) {
-
-        //Zahlen einer Nacht zusammengefasst
-        let tag = (schlafdaten[i]);
-        let oveScore = (schlafdaten[i].overall_score);
-        let comScore = (schlafdaten[i].composition_score);
-        let revScore = (schlafdaten[i].revitalization_score);
-        let durScore = (schlafdaten[i].duration_score);
-        console.log(oveScore);
+    let r = random(window.innerWidth);
+    let r2 = random(window.innerHeight);
+    for (let y = 0; y < schlafdaten.length; y++) {
+        for (let i = 0; i < schlafdaten[y].overall_score - 70; i++) {
 
 
 
-        fill(255, 255, 255);
-        stroke(255, 0, 0);
-        rect(tag * 20, 20, 100, 10);
+
+
+
+
+
+
+            fill(255, 255, 255)
+            stroke(255, 0, 0);
+            strokeWeight(0.1);
+            //if (y == 10 || y == 20) {
+            // rect(i * 30, y * 10, 5, 5)
+            // } else {
+            rect(i * 15, y * 10, 10, 10)
+                //}
+
+
+        }
     }
+
 
 
 }
