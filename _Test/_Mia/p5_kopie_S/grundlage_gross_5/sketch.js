@@ -78,7 +78,7 @@ function draw() {
 noFill();
 let x1 = 850,
  x2 = 1000,
- x3 = 2000,
+ x3 = 20,
  x4 = 100;
 let y1 = 700,
  y2 = 300,
