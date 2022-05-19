@@ -54,12 +54,9 @@ function draw() {
         let a = map(seconds, 0, 2000, 0, 3)
 
 
-        //fill(255, 255, 255);
-        //stroke(255, 0, 0);
-        //stroke(0, 0, 0);
-        rotateX(a);
-        rotateY(a);
-        box(300);
+        fill(255, 255, 255)
+        stroke(255, 0, 0);
+        sphere(seconds, 3, 24);
     }
 }
 

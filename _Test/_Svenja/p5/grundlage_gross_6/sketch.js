@@ -29,7 +29,7 @@ function draw() {
         console.log(minutenGesamtWake);
 
         //Zahlen pro wach/deep/light/rem–phase
-        let seconds = (schlafdaten[0].levels.data[i].seconds);
+        let seconds = (schlafdaten[10].levels.data[i].seconds);
         let level = (schlafdaten[0].levels.data[i].level);
         let f = color(255, 0, 0);
 

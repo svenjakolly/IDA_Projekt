@@ -20,7 +20,7 @@ function setup() {
 
 
 function draw() {
-    background(0, 0, 0);
+    background(0, 0, 255);
     let val = slider.value();
     let data = schlafdaten[val].levels.data
 
@@ -51,7 +51,7 @@ function draw() {
         }
 
         //maps
-        let a = map(seconds, 0, 2000, 0, 3)
+        let a = map(seconds, 0, 2000, 0, 0.7)
 
 
         //fill(255, 255, 255);
