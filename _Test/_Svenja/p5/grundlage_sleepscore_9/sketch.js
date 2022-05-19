@@ -1,30 +1,45 @@
-function preload() {
-    let url = "sleep_score.json";
-    loadJSON(url, loaded);
-}
+let schlafdaten;
+
 
 function loaded(data) {
     schlafdaten = data;
 }
 
-
-
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight, WEBGL);
-    frameRate(10);
-
+    let url = "sleep_score.json";
+    loadJSON(url, loaded);
+    background(0, 0, 255);
+    frameRate(1);
 }
 
 function draw() {
-    background(0);
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < schlafdaten.length; i++) {
 
-        stroke(0);
-        strokeWeight(1);
-        nummer = (data[i])
+        //Zahlen einer Nacht zusammengefasst
+        let tag = (schlafdaten[i]);
+        let oveScore = (schlafdaten[i].overall_score);
+        let comScore = (schlafdaten[i].composition_score);
+        let revScore = (schlafdaten[i].revitalization_score);
+        let durScore = (schlafdaten[i].duration_score);
+        console.log(oveScore);
 
+
+
+        fill(255, 255, 255);
+        stroke(255, 0, 0);
+        rect(tag * 20, 20, 100, 10);
     }
-    fill(255);
-    rect(0, 0, 20, 20)
+
+
+}
+
+//screenshot speichern
+function keyReleased() {
+    if (key == 's' || key == 'S') {
+        let d = new Date();
+        let now = d.getFullYear() + "" + (d.getMonth() + 1) + "" + d.getDate() + "" + (d.getHours() + 1) + "-" + (d.getMinutes() + 1) + "" + (d.getSeconds() + 1) + "-" + frameCount;
+        saveCanvas(now, 'png');
+    }
 }
