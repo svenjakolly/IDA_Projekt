@@ -7,7 +7,7 @@ let cells;
 let generation = 0;
 
 // An array to store the ruleset, for example {0,1,1,0,1,1,0,1}
-let ruleset = [1, 1, 0, 1, 0, 1, 0, 0];
+let ruleset = [1, 0, 0, 1, 0, 1, 1, 0];
 
 function setup() {
   createCanvas(1900, 1000);
