@@ -51,7 +51,7 @@ function draw() {
         }
 
         //maps
-        let a = map(seconds, 0, 2000, 0, 3)
+        let a = map(seconds, 0, 2000, 0, 360)
 
 
         //fill(255, 255, 255);
