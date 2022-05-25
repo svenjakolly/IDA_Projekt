@@ -1,5 +1,5 @@
 
-let w = 10;
+let w = 4;
 // An array of 0s and 1s
 let cells;
 
@@ -7,10 +7,10 @@ let cells;
 let generation = 0;
 
 // An array to store the ruleset, for example {0,1,1,0,1,1,0,1}
-let ruleset = [1, 0, 0, 1, 0, 1, 1, 0];
+let ruleset = [1, 0, 0, 1, 0, 0, 1, 0];
 
 function setup() {
-  createCanvas(1900, 1000);
+  createCanvas(1450, 780);
   cells = Array(floor(width / w));
   for (let i = 0; i < cells.length; i++) {
     cells[i] = 0;
@@ -56,14 +56,15 @@ function generate() {
 // Could be improved and made more concise, but here we can explicitly see what is going on for each case
 function rules(a, b, c) {
   if (a == 0 && b == 1 && c == 1) return ruleset[0];
-  if (a == 1 && b == 1 && c == 0) return ruleset[1];
+  if (a == 1 && b == 1 && c == 1) return ruleset[1];
   if (a == 1 && b == 0 && c == 1) return ruleset[2];
   if (a == 0 && b == 0 && c == 0) return ruleset[3];
   if (a == 0 && b == 1 && c == 1) return ruleset[4];
   if (a == 1 && b == 1 && c == 0) return ruleset[5];
-  if (a == 0 && b == 0 && c == 1) return ruleset[6];
+  if (a == 0 && b == 1 && c == 1) return ruleset[6];
   if (a == 0 && b == 0 && c == 0) return ruleset[7];
-  if (a == 1 && b == 0 && c == 1) return ruleset[8];
+  if (a == 1 && b == 0 && c == 0) return ruleset[8];
+  if (a == 1 && b == 0 && c == 1) return ruleset[9];
   return 0;
 }
 
