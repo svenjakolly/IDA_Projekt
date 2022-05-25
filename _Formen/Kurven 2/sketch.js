@@ -66,22 +66,6 @@ function draw() {
     for (let i = 0; i < 10; i++) {
         let j = 50 * i + t;
 
-        beginShape();
-        vertex(k, k);
-        vertex(k, 300 + j);
-        vertex(k, 20 + j);
-        curveVertex(230 + t + j, t + j)
-        vertex(330, 200 + j);
-        vertex(430, 20 + j);
-        vertex(530, 100 + j + k);
-        vertex(630, 20 + j);
-        curveVertex(630 + t + j, t + k);
-        vertex(730, 300 + j);
-        vertex(830, 20 + j);
-        vertex(930, 220 + j);
-        vertex(1030, 20 + j + t);
-        curveVertex(1030 + t, t)
-        endShape();
 
 
         beginShape();
@@ -102,6 +86,12 @@ function draw() {
         vertex(1520, 710);
         vertex(1550 + k, 5 * j);
         vertex(1000, 3 * j);
+        vertex(2000, 800);
+        vertex(2000, j * 2);
+        vertex(k + 3 * j, j * 2);
+        vertex(k + 10 * j, j * 2);
+        vertex(k - 10 * j, 200 + k);
+        vertex(1000, 200 + k);
 
 
         endShape();
