@@ -10,7 +10,7 @@ function setup() {
     let url = "sleep_score.json";
     loadJSON(url, loaded);
     background(255, 255, 255);
-    frameRate(10);
+    frameRate(60);
 
 }
 
@@ -20,7 +20,7 @@ function draw() {
     noFill();
     let val = slider.value();
     let data = schlafdaten[val];
-    console.log(val)
+
 
     //duration
     for (let y = 0; y < 1; y++) {
