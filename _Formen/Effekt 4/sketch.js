@@ -1,5 +1,4 @@
-let slider;
-
+var slider;
 
 function loaded(data) {
     schlafdaten = data;
@@ -11,11 +10,12 @@ function setup() {
     let url = "sleep_score.json";
     loadJSON(url, loaded);
     background(255, 255, 255);
-    frameRate(0.3);
+    frameRate(10);
 
 }
 
 function draw() {
+    randomSeed(3);
     background(0);
     noFill();
     let val = slider.value();
@@ -24,7 +24,7 @@ function draw() {
 
     //duration
     for (let y = 0; y < 1; y++) {
-        let dur = (schlafdaten[3].duration_score);
+        let dur = (schlafdaten[val].duration_score);
         for (let i = 0; i < dur * 100; i++) {
             let j = i;
             fill(255);
@@ -52,7 +52,7 @@ function draw() {
 
     //revitalization
     for (let y = 0; y < 1; y++) {
-        let rev = (schlafdaten[3].revitalization_score);
+        let rev = (schlafdaten[val].revitalization_score);
         for (let i = 0; i < rev * 100; i++) {
             let j = i;
             fill(0, 0, 255);
@@ -80,7 +80,7 @@ function draw() {
 
     //composition
     for (let y = 0; y < 1; y++) {
-        let composition = (schlafdaten[3].composition_score);
+        let composition = (schlafdaten[val].composition_score);
 
         for (let i = 0; i < composition * 100; i++) {
             let j = i;
