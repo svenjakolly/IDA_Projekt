@@ -1,0 +1,137 @@
+var slider;
+
+function loaded(data) {
+    schlafdaten = data;
+    slider = createSlider(0, schlafdaten.length - 1, 0, 1);
+}
+
+function setup() {
+    createCanvas(window.innerWidth, window.innerHeight);
+    let url = "sleep_score.json";
+    loadJSON(url, loaded);
+    background(255);
+    frameRate(60);
+
+}
+
+function draw() {
+    randomSeed(3);
+    background(0, 0, 255);
+    noFill();
+    let val = slider.value();
+    let data = schlafdaten[val];
+
+
+    //revitalization
+    for (let y = 0; y < 1; y++) {
+        let rev = (schlafdaten[val].revitalization_score);
+        for (let i = 0; i < pow(rev - 14, 2); i++) {
+            let j = i;
+            fill(255);
+            stroke(0);
+            strokeWeight(2);
+            let l = random(0, window.innerWidth);
+            let m = random(0, window.innerHeight);
+            let n = random(0, 300);
+
+
+            triangle(n + pow(rev - 14, 3.2), m, l, 560, 81, 560);
+            // rect(l, m - j, 25, 25);
+            // rect(l, m - j - 100, 25, 25);
+            // rect(l, m - j - 19, 25, 25);
+            // rect(l, m - j - 40, 25, 25);
+            // rect(l, m - j - 40, 25, 25);
+            // rect(l, m - j - 40, 25, 25);
+            // rect(l, m - j - 200, 25, 25);
+            // rect(l, m - j - 70, 25, 25);
+            // rect(l, m - j - 33, 25, 25);
+            // rect(l, m - j - 100, 25, 25);
+            // rect(l, m - j - 20, 25, 25);
+            // rect(l, m - j - 60, 25, 25);
+        }
+    }
+
+
+    //composition
+    for (let y = 0; y < 1; y++) {
+        let comp = (schlafdaten[val].composition_score);
+        for (let i = 0; i < pow(comp - 11, 1.5); i++) {
+
+
+
+            let j = i;
+            fill(0, 0, 0);
+            noStroke();
+            // strokeWeight(2);
+            let l = random(0, window.innerWidth);
+            let m = random(0, window.innerHeight);
+
+
+            rect(l, 200, 3, 70);
+            // rect(l, m + j + 100, 3, 50);
+            // rect(l, m + j + 19, 3, 50);
+            // rect(l, m + j + 40, 3, 50);
+            // rect(l, m + j + 40, 3, 50);
+            // rect(l, m + j + 40, 3, 50);
+            // rect(l, m + j + 200, 3, 50);
+            // rect(l, m + j + 70, 3, 50);
+            // rect(l, m + j + 33, 3, 50);
+            // rect(l, m + j + 100, 3, 50);
+            // rect(l, m + j + 20, 3, 50);
+            // rect(l, m + j + 60, 3, 50);
+        }
+    }
+
+
+    //duration
+
+    let dur = (schlafdaten[val].duration_score);
+    const min = 21
+    const max = 47
+    let loop = map(dur, min, max, 20, 2000)
+    for (let i = 0; i < loop; i++) {
+
+        // for (let i = 0; i < pow(rev - 14, 5); i++) {
+
+
+        let j = i;
+        fill(0);
+        // noStroke();
+        stroke(0);
+        strokeWeight(1);
+        let l = random(0, window.innerWidth);
+        let m = random(0, window.innerHeight);
+
+        rect(l + j, m + j, 1, 1);
+        rect(l + j + 20, m + j + 100, 1, 1);
+        rect(l + j - 200, m + j - 19, 1, 1);
+        rect(l + j + 30, m + j + 40, 1, 1);
+        rect(l + j + 10, m + j + 40, 1, 1);
+        rect(l + j - 50, m + j - 40, 1, 1);
+        rect(l + j + 200, m + j + 200, 1, 1);
+        rect(l + j + 80, m + j + 70, 1, 1);
+        rect(l + j - 120, m + j - 33, 1, 1);
+        rect(l + j + 10, m + j + 100, 1, 1);
+        rect(l + j + 40, m + j + 20, 1, 1);
+        rect(l + j - 70, m + j - 60, 1, 1);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+//screenshot speichern
+function keyReleased() {
+    if (key == 's' || key == 'S') {
+        let d = new Date();
+        let now = d.getFullYear() + "" + (d.getMonth() + 1) + "" + d.getDate() + "" + (d.getHours() + 1) + "-" + (d.getMinutes() + 1) + "" + (d.getSeconds() + 1) + "-" + frameCount;
+        saveCanvas(now, 'png');
+    }
+}
