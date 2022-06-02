@@ -1,12 +1,15 @@
 var slider;
-var myCanvas = createCanvas(winWidth, winHeight);
-myCanvas.parent("idnameofdiv");
+let krungthep;
 
 function loaded(data) {
     schlafdaten = data;
     slider = createSlider(0, schlafdaten.length - 1, 0, 1);
-    slider.style('width', '300px');
-    slider.position(10, windowHeight / 1.05);
+    slider.position(10, windowHeight / 1.03);
+    slider.addClass("mysliders");
+}
+
+function preload() {
+    krungthep = loadFont('krungthep.ttf');
 }
 
 function setup() {
@@ -15,6 +18,7 @@ function setup() {
     loadJSON(url, loaded);
     background(255);
     frameRate(60);
+    textFont(krungthep);
 }
 
 function draw() {
@@ -23,6 +27,13 @@ function draw() {
     noFill();
     let val = slider.value();
     let data = schlafdaten[val];
+    let datum = (schlafdaten[val].timestamp.split('T')[0]);
+
+    //datum
+    fill(255);
+    noStroke();
+    textSize(32);
+    text(datum, 10, 40);
 
     //revitalization
     let rev = (schlafdaten[val].revitalization_score);
