@@ -61,4 +61,12 @@ a:hover {
 
 .text {
     color: white;
+    font-size: 32px;
+    position: fixed;
+    top: 7px;
+    left: 10px;
+}
+
+.text:hover {
+    color: blue;
 }
