@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: krungthep;
+}
+
+.mysliders {
+    width: 300px;
+    background-color: transparent;
+}
+
+.mysliders::-webkit-slider-runnable-track {
+    background: #ffffff;
+    height: 4px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    /*width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+}
+
+.mysliders::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+    border-radius: 0px;
+}
+
+.info {
+    position: fixed;
+    top: 7px;
+    right: 10px;
+    font-size: 32px;
+    /*color: transparent;
+    -webkit-text-stroke: 1.6px black;*/
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    /*color: transparent;
+    -webkit-text-stroke: 1.6px black;*/
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    font-size: 32px;
+    position: fixed;
+    top: 7px;
+    left: 10px;
+}
+
+.text:hover {
+    color: blue;
+}
